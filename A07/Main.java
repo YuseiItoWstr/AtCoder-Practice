@@ -28,10 +28,6 @@ public class Main {
     }
 
     public static List<Integer> convertAllDay(int D, int[][] LR) {
-        int L = 0;
-        for (int i = 0; i < LR.length; i++) {
-            L += LR[i][1] - LR[i][0] + 1;
-        }
         List<Integer> allDay = new ArrayList<>();
         for (int[] pair : LR) {
             for (int num = pair[0]; num <= pair[1]; num++) {
